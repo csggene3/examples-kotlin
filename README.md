@@ -11,6 +11,11 @@ Steps to use:
 6. Run > neoj.exe <example>.class
 7. Compiler runs and outputs <example>.avm
 8. You can use the Testnet to deploy the smart contract
-  
+
+Notes:
+- The current neoj compiler is functional but is not complete (so doesn't handle all types of Java bytecode).
+- In particular, for Kotlin, the compiler doesn't currently understand Kotlin's extra internal null parameter check and will error.
+- To get around this use ? with args and return values (see Hello World example) which removes Kotlin's check.
+
 Enjoy!
 ~wy
